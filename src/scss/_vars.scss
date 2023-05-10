@@ -2,7 +2,6 @@
 // colors
 :root {
   // base
-  --font-family: "Open Sans", sans-serif;
   --content-width: 1170px;
   --container-offset: 15px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
@@ -10,3 +9,12 @@
   // colors
   --light-color: #fff;
 }
+
+
+// Fonts
+$font-main: 'Raleway',
+sans-serif;
+$font-accent: 'Playfair Display',
+serif;
+$font-secondary: 'Roboto',
+sans-serif;
