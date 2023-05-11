@@ -9,25 +9,25 @@
     transform: translate(-50%, 0%);
     @include decorNumber;
   }
-}
 
-.benefits__row {
-  display: flex;
-  column-gap: 70px;
-}
+  &__row {
+    display: flex;
+    column-gap: 70px;
+  }
 
-.benefits__item {
-  text-align: center;
-}
+  &__item {
+    text-align: center;
+  }
 
-.benefits__item-img {
-  margin-bottom: 53px;
-}
+  &__img {
+    margin-bottom: 53px;
+  }
 
-.benefits__item-text {
-  font-size: 20px;
-  line-height: 1.35;
-  font-family: $font-secondary;
-  font-weight: 300;
-  margin: 0;
+  &__text {
+    font-size: 20px;
+    line-height: 1.35;
+    font-family: $font-secondary;
+    font-weight: 300;
+    margin: 0;
+  }
 }
