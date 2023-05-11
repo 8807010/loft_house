@@ -88,6 +88,10 @@ a {
   margin: 0 auto;
   padding: 0 15px;
   max-width: 1140px;
+
+  &--sm {
+    max-width: 840px;
+  }
 }
 
 .js-focus-visible :focus:not(.focus-visible) {
