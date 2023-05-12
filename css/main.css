@@ -32,8 +32,8 @@ html {
 
 .page__body {
   font-family: "Raleway", sans-serif;
-  background-color: #242B33;
-  color: #fff;
+  background-color: #242b33;
+  color: #ffffff;
   font-size: 16px;
 }
 
@@ -45,11 +45,11 @@ img {
 
 a {
   text-decoration: none;
-  color: #fff;
+  color: #ffffff;
   transition: color 0.2s ease-in;
 }
 a:hover {
-  color: #D4C17F;
+  color: #d4c17f;
 }
 
 .site-container {
@@ -140,8 +140,9 @@ a:hover {
 .heading {
   font-size: 36px;
   font-family: "Playfair Display", serif;
-  color: #D4C17F;
+  color: #d4c17f;
   font-weight: 700;
+  margin: 0;
 }
 
 .header {
@@ -161,7 +162,7 @@ a:hover {
   text-align: center;
   font-size: 48px;
   font-family: "Playfair Display", serif;
-  color: #D4C17F;
+  color: #d4c17f;
   font-weight: 700;
   margin: 0;
 }
@@ -189,7 +190,7 @@ a:hover {
   top: 0px;
   width: 100%;
   height: 100%;
-  background-color: #242B33;
+  background-color: #242b33;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -317,7 +318,7 @@ a:hover {
   overflow: hidden;
   position: relative;
   display: inline-block;
-  color: #fff;
+  color: #ffffff;
 }
 .card::before {
   content: "";
@@ -327,7 +328,7 @@ a:hover {
   top: 0px;
   width: 100%;
   height: 100%;
-  background: linear-gradient(180deg, rgba(36, 43, 51, 0) 0%, #242B33 100%);
+  background: linear-gradient(180deg, rgba(36, 43, 51, 0) 0%, #242b33 100%);
 }
 .card::after {
   opacity: 0;
@@ -342,7 +343,7 @@ a:hover {
   transition: opacity 0.2s ease-in;
 }
 .card:hover {
-  color: #fff;
+  color: #ffffff;
 }
 .card:hover::after {
   opacity: 1;
@@ -366,4 +367,70 @@ a:hover {
   right: 20px;
   bottom: 44px;
   font-size: 24px;
+  margin: 0;
+}
+
+.cta {
+  padding: 180px 0;
+  background: linear-gradient(180deg, #242b33 10.42%, rgba(36, 43, 51, 0) 50.52%, #242b33 90.1%), linear-gradient(0deg, rgba(36, 43, 51, 0.9), rgba(36, 43, 51, 0.9)), url("./../img/cta/cta-bg.jpg"), #c4c4c4;
+}
+
+.cta__title {
+  margin-bottom: 17px;
+}
+
+.cta__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.cta__text {
+  line-height: 1.5;
+}
+.cta__text p + p {
+  margin-top: 1em;
+}
+
+.cta__form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px 30px;
+}
+
+.form__input {
+  height: 50px;
+  padding: 12px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  font-size: 14px;
+  transition: background-color 0.2s ease-in;
+}
+.form__input::placeholder {
+  color: #bebebe;
+}
+.form__input:focus {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.form__privacy {
+  font-size: 13px;
+  color: #e7e7e7;
+  text-align: center;
+  line-height: 1.23;
+}
+
+.form__btn {
+  height: 50px;
+  padding: 12px;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 700;
+  text-align: center;
+  background-color: #d4c17f;
+  transition: background-color 0.2s ease-in;
+}
+.form__btn:hover {
+  background-color: #ddc676;
 }
