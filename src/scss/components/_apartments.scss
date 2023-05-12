@@ -7,14 +7,14 @@
     transform: translate(50%, 0%);
     @include decorNumber;
   }
-}
 
-.apartments__title {
-  margin-bottom: 88px;
-}
+  &__title {
+    margin-bottom: 88px;
+  }
 
-.apartments__cards {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
 }

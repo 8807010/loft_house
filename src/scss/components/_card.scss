@@ -37,25 +37,25 @@
   &:hover::after {
     opacity: 1;
   }
-}
 
-.card__img {
-  position: relative;
-  z-index: 5;
-  transition: all 0.2s ease-in;
+  &__img {
+    position: relative;
+    z-index: 5;
+    transition: all 0.2s ease-in;
+  }
+
+  &__title {
+    position: absolute;
+    z-index: 9;
+    left: 50px;
+    right: 20px;
+    bottom: 44px;
+    font-size: 24px;
+    margin: 0;
+  }
 }
 
 .card:hover .card__img {
   transform: scale(1.1);
   filter: contrast(110%) brightness(1.2) saturate(1.2);
-}
-
-.card__title {
-  position: absolute;
-  z-index: 9;
-  left: 50px;
-  right: 20px;
-  bottom: 44px;
-  font-size: 24px;
-  margin: 0;
 }

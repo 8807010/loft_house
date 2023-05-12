@@ -6,28 +6,28 @@
       $dark 90.1%),
     linear-gradient(0deg, rgba(36, 43, 51, 0.9), rgba(36, 43, 51, 0.9)),
     url('./../img/cta/cta-bg.jpg'), #c4c4c4;
-}
 
-.cta__title {
-  margin-bottom: 17px;
-}
-
-.cta__wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
-}
-
-.cta__text {
-  line-height: 1.5;
-
-  p+p {
-    margin-top: 1em;
+  &__title {
+    margin-bottom: 17px;
   }
-}
 
-.cta__form {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 35px 30px;
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  &__text {
+    line-height: 1.5;
+
+    p+p {
+      margin-top: 1em;
+    }
+  }
+
+  &__form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px 30px;
+  }
 }
