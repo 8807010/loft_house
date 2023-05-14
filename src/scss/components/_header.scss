@@ -13,6 +13,11 @@
   background-size: cover;
   background-repeat: no-repeat;
 
+  @include tablet {
+    min-height: unset;
+    row-gap: 50px;
+  }
+
   &__title {
     position: relative;
     padding-bottom: 121px;
@@ -22,6 +27,11 @@
     color: $accent;
     font-weight: 700;
     margin: 0;
+
+    @include tablet {
+      font-size: 32px;
+      padding-bottom: 100px;
+    }
 
     &-icon {
       position: absolute;
@@ -41,6 +51,27 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
+
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 30px;
+    }
+  }
+
+  &__burger {
+    position: fixed;
+    top: 50px;
+    right: 15px;
+  }
+
+  &__nav {
+    display: block;
+
+    @include tablet {
+      display: none;
+    }
   }
 }
 
@@ -60,23 +91,19 @@
   padding-top: 40px;
   padding-bottom: 40px;
 
-  .header__nav {
-    display: block;
-  }
-
   .nav__list {
     flex-direction: column;
     align-items: center;
     row-gap: 30px;
   }
-
-  .header__nav-btn {
-    position: fixed;
-    top: 50px;
-    right: 15px;
-  }
 }
 
-.header__nav-btn {
+
+
+.header__burger {
   display: none;
+
+  @include tablet {
+    display: block;
+  }
 }

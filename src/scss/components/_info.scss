@@ -26,4 +26,13 @@
   &--tel::before {
     background-image: url('./../img/header/phone.svg');
   }
+
+  @include tablet {
+    font-size: 14px;
+
+    &--map,
+    &--tel {
+      padding-left: 26px;
+    }
+  }
 }
