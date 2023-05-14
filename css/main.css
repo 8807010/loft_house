@@ -217,17 +217,23 @@ a:hover {
     row-gap: 30px;
   }
 }
-.header__burger {
-  position: fixed;
-  top: 50px;
-  right: 15px;
-}
 .header__nav {
   display: block;
+  overflow-y: auto;
+  text-align: center;
+  width: 100%;
 }
 @media (max-width: 959px) {
   .header__nav {
     display: none;
+  }
+}
+.header__burger {
+  display: none;
+}
+@media (max-width: 959px) {
+  .header__burger {
+    display: block;
   }
 }
 
@@ -244,22 +250,20 @@ a:hover {
   justify-content: flex-start;
   align-items: center;
   row-gap: 60px;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding: 40px 15px;
 }
 .header__top-row--mobile .nav__list {
   flex-direction: column;
   align-items: center;
   row-gap: 30px;
 }
-
-.header__burger {
-  display: none;
+.header__top-row--mobile .header__burger {
+  position: fixed;
+  top: 50px;
+  right: 15px;
 }
-@media (max-width: 959px) {
-  .header__burger {
-    display: block;
-  }
+.header__top-row--mobile .header__nav {
+  display: block;
 }
 
 .nav {
@@ -271,6 +275,66 @@ a:hover {
 .nav__list {
   display: flex;
   column-gap: 40px;
+}
+
+/* Nav Icon */
+.burger__btn {
+  --time: 0.1s;
+  --width: 40px;
+  --height: 30px;
+  --line-height: 1px;
+  --line-margin: 2;
+  --color: #fff;
+  height: var(--height);
+  width: var(--width);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.burger__icon {
+  position: relative;
+  width: var(--width);
+  height: var(--line-height);
+  background-color: var(--color);
+}
+
+.burger__icon::before,
+.burger__icon::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: var(--width);
+  height: var(--line-height);
+  background-color: var(--color);
+  transition: transform var(--time) ease-in, top var(--time) linear var(--time);
+}
+
+.burger__icon::before {
+  top: calc(var(--line-height) * -8);
+}
+
+.burger__icon::after {
+  top: calc(var(--line-height) * 8);
+}
+
+.burger__icon.burger__icon--active {
+  background-color: transparent;
+}
+
+.burger__icon.burger__icon--active::before,
+.burger__icon.burger__icon--active::after {
+  top: 0;
+  transition: top var(--time) linear, transform var(--time) ease-in var(--time);
+}
+
+.burger__icon.burger__icon--active::before {
+  transform: rotate(45deg);
+}
+
+.burger__icon.burger__icon--active::after {
+  transform: rotate(-45deg);
 }
 
 .info {

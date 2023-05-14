@@ -60,20 +60,27 @@
     }
   }
 
-  &__burger {
-    position: fixed;
-    top: 50px;
-    right: 15px;
-  }
-
   &__nav {
     display: block;
+    overflow-y: auto;
+    text-align: center;
+    width: 100%;
 
     @include tablet {
       display: none;
     }
   }
+
+  &__burger {
+    display: none;
+
+    @include tablet {
+      display: block;
+    }
+  }
 }
+
+
 
 .header__top-row--mobile {
   position: fixed;
@@ -88,22 +95,22 @@
   justify-content: flex-start;
   align-items: center;
   row-gap: 60px;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding: 40px 15px;
 
-  .nav__list {
+
+  & .nav__list {
     flex-direction: column;
     align-items: center;
     row-gap: 30px;
   }
-}
 
+  & .header__burger {
+    position: fixed;
+    top: 50px;
+    right: 15px;
+  }
 
-
-.header__burger {
-  display: none;
-
-  @include tablet {
+  & .header__nav {
     display: block;
   }
 }
