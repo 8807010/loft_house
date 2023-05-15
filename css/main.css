@@ -545,6 +545,11 @@ a:hover {
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media (max-width: 959px) {
+  .cta {
+    padding: 60px 0;
+  }
+}
 .cta__title {
   margin-bottom: 17px;
 }
@@ -552,6 +557,11 @@ a:hover {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
+}
+@media (max-width: 959px) {
+  .cta__wrapper {
+    grid-template-columns: 1fr;
+  }
 }
 .cta__text {
   line-height: 1.5;
@@ -562,11 +572,21 @@ a:hover {
 .cta__text p + p {
   margin-top: 1em;
 }
+@media (max-width: 959px) {
+  .cta__text {
+    font-size: 14px;
+  }
+}
 .cta__form {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 35px 30px;
   align-content: baseline;
+}
+@media (max-width: 959px) {
+  .cta__form {
+    grid-template-columns: 1fr;
+  }
 }
 
 .form__input {
@@ -592,6 +612,11 @@ a:hover {
   margin: 0;
   display: flex;
   align-items: center;
+}
+@media (max-width: 959px) {
+  .form__privacy--bottom {
+    grid-row: 4/5;
+  }
 }
 .form__btn {
   height: 50px;

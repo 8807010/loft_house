@@ -9,6 +9,10 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+  @include tablet {
+    padding: 60px 0;
+  }
+
   &__title {
     margin-bottom: 17px;
   }
@@ -17,6 +21,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
+
+    @include tablet {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__text {
@@ -29,6 +37,10 @@
     p+p {
       margin-top: 1em;
     }
+
+    @include tablet {
+      font-size: 14px;
+    }
   }
 
   &__form {
@@ -36,5 +48,9 @@
     grid-template-columns: 1fr 1fr;
     gap: 35px 30px;
     align-content: baseline;
+
+    @include tablet {
+      grid-template-columns: 1fr;
+    }
   }
 }

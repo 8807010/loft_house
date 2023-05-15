@@ -25,6 +25,12 @@
     margin: 0;
     display: flex;
     align-items: center;
+
+    &--bottom {
+      @include tablet {
+        grid-row: 4 / 5;
+      }
+    }
   }
 
   &__btn {
