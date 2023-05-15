@@ -705,8 +705,18 @@ a:hover {
   top: 180px;
   line-height: 1;
 }
+@media (max-width: 959px) {
+  .map {
+    padding: 90px 0;
+  }
+}
 .map__title {
   margin-bottom: 88px;
+}
+@media (max-width: 959px) {
+  .map__title {
+    margin-bottom: 44px;
+  }
 }
 .map__block {
   width: 100%;
