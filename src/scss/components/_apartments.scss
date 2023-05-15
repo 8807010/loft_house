@@ -1,5 +1,6 @@
 .apartments {
   position: relative;
+  overflow: hidden;
 
   &::before {
     content: "III";
@@ -22,7 +23,7 @@
     gap: 30px;
 
     @include tablet {
-      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
     }
   }
 }
