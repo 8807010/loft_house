@@ -140,6 +140,10 @@ a {
   color: $accent;
   font-weight: 700;
   margin: 0;
+
+  @include tablet {
+    font-size: 28px;
+  }
 }
 
 .link-bold {
