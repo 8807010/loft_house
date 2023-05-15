@@ -759,10 +759,22 @@ a:hover {
   font-size: 14px;
   letter-spacing: 0.05rem;
 }
+@media (max-width: 959px) {
+  .footer {
+    padding-top: 36px;
+    padding-bottom: 25px;
+  }
+}
 .footer__grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
+}
+@media (max-width: 959px) {
+  .footer__grid {
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 40px 30px;
+  }
 }
 .footer__logo {
   margin-top: -12px;
