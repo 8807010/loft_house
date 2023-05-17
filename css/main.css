@@ -232,9 +232,9 @@ a:hover {
   }
 }
 .header__nav {
-  display: block;
+  display: flex;
   overflow-y: auto;
-  text-align: center;
+  justify-content: flex-end;
   width: 100%;
 }
 @media (max-width: 959px) {

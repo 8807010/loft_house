@@ -67,9 +67,9 @@
   }
 
   &__nav {
-    display: block;
+    display: flex;
     overflow-y: auto;
-    text-align: center;
+    justify-content: flex-end;
     width: 100%;
 
     @include tablet {
