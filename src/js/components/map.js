@@ -3,7 +3,7 @@
 ymaps.ready(init);
 function init() {
   // Создание карты.
-  var myMap = new ymaps.Map("map", {
+  var map = new ymaps.Map("map", {
     // Координаты центра карты.
     // Порядок по умолчанию: «широта, долгота».
     // Чтобы не определять координаты центра карты вручную,
@@ -13,4 +13,18 @@ function init() {
     // от 0 (весь мир) до 19.
     zoom: 16,
   });
+
+  var myPlacemark = new ymaps.Placemark(
+    [59.943543, 30.338928],
+    {},
+    {
+      iconLayout: 'default#image',
+      iconImageHref: './img/map/location-pin.svg',
+      iconImageSize: [40, 40],
+      iconImageOffset: [-20, -40],
+    }
+  );
+
+  map.geoObjects.add(myPlacemark);
+
 }
