@@ -16,7 +16,16 @@ function init() {
 
   var myPlacemark = new ymaps.Placemark(
     [59.943543, 30.338928],
-    {},
+    {
+      balloonContent: `
+    <div class="balloon">
+      <div class="balloon__address">Наб. реки Фонтанки 10-15</div>
+      <div class="balloon__contacts">
+        <a href="tel:+78121234567">+8 (812) 123-45-67</a>
+      </div>
+    </div>
+  `,
+    },
     {
       iconLayout: 'default#image',
       iconImageHref: './img/map/location-pin.svg',
