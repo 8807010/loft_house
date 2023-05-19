@@ -10,4 +10,10 @@
     row-gap: 10px;
     flex-wrap: wrap;
   }
+
+  &__link {
+    @include tablet {
+      font-size: 20px;
+    }
+  }
 }

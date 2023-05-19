@@ -294,6 +294,11 @@ a:hover {
   row-gap: 10px;
   flex-wrap: wrap;
 }
+@media (max-width: 959px) {
+  .nav__link {
+    font-size: 20px;
+  }
+}
 
 /* Nav Icon */
 .burger__btn {
@@ -392,6 +397,12 @@ a:hover {
   overflow: hidden;
   position: relative;
   padding: 120px 0;
+}
+@media (max-width: 959px) {
+  .benefits {
+    padding-top: 0;
+    padding-bottom: 60px;
+  }
 }
 .benefits::after {
   content: "II";
@@ -709,7 +720,7 @@ a:hover {
 }
 @media (max-width: 959px) {
   .map {
-    padding: 90px 0;
+    padding: 60px 0;
   }
 }
 .map__title {
@@ -777,7 +788,7 @@ a:hover {
 }
 @media (max-width: 959px) {
   .feedback {
-    padding-bottom: 90px;
+    padding-bottom: 60px;
   }
 }
 .feedback__title {
