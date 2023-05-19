@@ -841,6 +841,13 @@ a:hover {
   column-gap: 22px;
 }
 
+.socials__img {
+  transition: transform 0.3s ease-in-out;
+}
+.socials__img:hover {
+  transform: scale(1.2);
+}
+
 .youtubelightbox {
   z-index: 999;
   position: fixed;
